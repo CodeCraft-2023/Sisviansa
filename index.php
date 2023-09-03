@@ -7,12 +7,17 @@
 <body>
     <nav>
         <ul>
+            <li><a href=""></a></li>
+            <li>Sisviansa</li>
+        </ul>
+        <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Ayuda</a></li>
-            
+            <li><a href="#"><img src="img/carrito.png"/></a></li>
+            <li><a href="#"><img src="img/lupa.png"/></a></li>
         </ul>
-        <img src="lupa.png"/>
+        
         <h1>HOla</h1>
     </nav>
     <article>
