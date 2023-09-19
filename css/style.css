@@ -1,0 +1,29 @@
+img{
+    width: 15%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.nav{
+    background: red;
+}
+div.nav-cont-1{
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.nav-cont-2{
+    background: green;
+}
+div.nav-cont-3{
+    background: yellow;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
