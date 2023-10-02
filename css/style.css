@@ -5,12 +5,13 @@ body {
     padding: 0;
     height: 100vh;
     /* Establece la altura del cuerpo al 100% de la ventana del navegador */
-    background-image: url('/img/fondo_4.jpg');
+    background-image: url("/img/fondo_4.jpg");
     /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen de fondo local */
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 
 /* Estilos para la barra de navegación */
 nav {
@@ -20,7 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    position: sticky; /* Hace que el elemento sea "sticky" */
+    position: fixed; /* Hace que la barra de navegación sea estática */
     top: 0; /* Fija el elemento en la parte superior del contenedor */
     z-index: 1000; /* Asegura que el elemento esté sobre otros elementos */
 }
