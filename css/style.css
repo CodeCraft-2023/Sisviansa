@@ -20,9 +20,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    position: static; /* Hace que la barra de navegación sea estática */
-    top: 0; /* Fija el elemento en la parte superior del contenedor */
-    z-index: 1000; /* Asegura que el elemento esté sobre otros elementos */
+    position: static;
+    /* Hace que la barra de navegación sea estática */
+    top: 0;
+    /* Fija el elemento en la parte superior del contenedor */
+    z-index: 1000;
+    /* Asegura que el elemento esté sobre otros elementos */
 }
 
 .sesion button {
@@ -71,7 +74,7 @@ nav {
     font-weight: bold;
 }
 
-a:hover{
+a:hover {
     color: #000000;
 }
 
@@ -82,7 +85,7 @@ a:hover{
     /* Centra los iconos verticalmente */
 }
 
-button{
+button {
     font-weight: bold;
 }
 
@@ -96,7 +99,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #323f3a;
     color: #ffffff;
 }
@@ -118,9 +121,12 @@ main {
     /* Incluye el espacio de relleno en el ancho total */
     width: 50%;
     /* Ocupa el 50% del ancho del cuerpo */
-    display: flex; /* Usa flexbox para ajustar la altura automáticamente */
-    flex-direction: column; /* Alinea los elementos internos verticalmente */
-    min-height: 100vh; /* Ajusta la altura al 100% de la altura de la pantalla como mínimo */
+    display: flex;
+    /* Usa flexbox para ajustar la altura automáticamente */
+    flex-direction: column;
+    /* Alinea los elementos internos verticalmente */
+    min-height: 100vh;
+    /* Ajusta la altura al 100% de la altura de la pantalla como mínimo */
 }
 
 /* Establece el estilo del contenido de texto en <main> */
