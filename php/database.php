@@ -1,31 +1,34 @@
 <?php
 
-function conect_bd()
+// Función "conectar" para establecer una conexión a la base de datos.
+function conectar()
 {
-    $servername = "localhost"; // Nombre del servidor local
-    $username = "root"; // Nombre de usuario predeterminado de MySQL en XAMPP
-    $password = ""; // Contraseña predeterminada en XAMPP (dejar en blanco por defecto)
-    $dbname = "sisviansa"; // Reemplazar con el nombre de tu base de datos
+    $servername = "localhost"; // Servidor de la base de datos
+    $username = "root"; // Nombre de usuario de la base de datos
+    $password = ""; // Contraseña de la base de datos
+    $dbname = "sisviansa"; // Nombre de la base de datos
 
-    // Crear una conexión
+    // Crear una nueva instancia de la clase mysqli para establecer la conexión a la base de datos.
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Verificar la conexión
+    // Comprobar si se ha producido un error de conexión.
     if ($conn->connect_error) {
         die("Error de conexión: " . $conn->connect_error);
     }
+
+    return $conn; // Devolver la conexión establecida
 }
 
-/*echo "Conexión exitosa";
+// Llamar a la función "conectar" para obtener una conexión a la base de datos.
+$conexion = conectar();
 
-// Aquí puedes ejecutar consultas SQL y trabajar con la base de datos
+// Función "desconectar" para cerrar una conexión a la base de datos.
+function desconectar($conn)
+{
+    $conn->close(); // Cierra la conexión pasada como argumento.
+}
 
-// Cierra la conexión cuando hayas terminado
-$conn->close();*/
+// Llamar a la función "desconectar" para cerrar la conexión previamente establecida en "$conexion".
+desconectar($conexion); // Donde "$conexion" es el objeto de conexión obtenido previamente.
 
-/*
-Funcion de conexcion a BD,
-Clear las llamas a la BD,
-Verificar el tipo de llamada para formatear la respuesta,
-Cerrar la peticion y devolver algo.
-*/
+?>
