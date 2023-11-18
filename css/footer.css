@@ -1,0 +1,44 @@
+/* footer.css */
+
+footer {
+    background-color:#40524b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Colores más vistosos para las etiquetas de redes sociales */
+.redes-sociales a {
+    color: #000000; /* Rosa */
+}
+
+.redes-sociales a:hover {
+    color: rgb(0, 255, 81); /* Rosa más oscuro al pasar el mouse */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
