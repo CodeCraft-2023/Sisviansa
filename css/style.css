@@ -98,8 +98,7 @@ button:hover {
 }
 
 main {
-    background: #fff;
-    opacity: 0.75;
+    background: rgba(255, 255, 255, 0.75); /* Fondo con transparencia */
     padding: 20px;
     box-sizing: border-box;
     width: 50%;
@@ -111,6 +110,10 @@ main {
 main p {
     font-size: 1.2rem;
     text-align: center;
+}
+
+main > * {
+    opacity: 1; /* Opacidad completa para los elementos secundarios */
 }
 
 a {
@@ -159,6 +162,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
+    
 }
 
 .descripcion h2 {
