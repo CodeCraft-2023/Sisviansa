@@ -98,7 +98,8 @@ button:hover {
 }
 
 main {
-    background: rgba(255, 255, 255, 0.75); /* Fondo con transparencia */
+    background: rgba(255, 255, 255, 0.75);
+    /* Fondo con transparencia */
     padding: 20px;
     box-sizing: border-box;
     width: 50%;
@@ -112,8 +113,9 @@ main p {
     text-align: center;
 }
 
-main > * {
-    opacity: 1; /* Opacidad completa para los elementos secundarios */
+main>* {
+    opacity: 1;
+    /* Opacidad completa para los elementos secundarios */
 }
 
 a {
@@ -162,7 +164,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
-    
+
 }
 
 .descripcion h2 {
@@ -194,25 +196,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-inner img {
-    border-radius: 8px; /* Añade bordes redondeados a las imágenes */
+    border-radius: 8px;
+    /* Añade bordes redondeados a las imágenes */
 }
 
 /* Estilos para el botón submit */
 .carousel-item .btn-primary {
-    margin-top: 10px; /* Espaciado superior */
-    background-color: #4CAF50; /* Color de fondo verde */
-    color: #fff; /* Color del texto blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Ajusta el padding según sea necesario */
-    border-radius: 5px; /* Añade bordes redondeados al botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 10px;
+    /* Espaciado superior */
+    background-color: #4CAF50;
+    /* Color de fondo verde */
+    color: #fff;
+    /* Color del texto blanco */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Ajusta el padding según sea necesario */
+    border-radius: 5px;
+    /* Añade bordes redondeados al botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
 }
 
 .carousel-item .btn-primary:hover {
-    background-color: #45a049; /* Cambia el color de fondo al pasar sobre el botón */
+    background-color: #45a049;
+    /* Cambia el color de fondo al pasar sobre el botón */
 }
 
-header, .alert {
+header,
+.alert {
     z-index: 100;
 }
 
@@ -237,14 +249,14 @@ header, .alert {
     display: flex;
 }
 
-.table__productos > img {
+.table__productos>img {
     width: 9rem;
     object-fit: contain;
     border-radius: 6px;
     margin-right: 20px;
 }
 
-.table__cantidad > input {
+.table__cantidad>input {
     width: 40px;
     border: none;
     outline: 0;

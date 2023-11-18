@@ -1,18 +1,6 @@
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="signup.css"> 
-    
-</head>
-<body>
-    
-</body>
-</html>
 <?php
+
+require_once "database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recuperar datos del formulario
@@ -79,3 +67,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Cierra la conexión a la base de datos
     $conn->close();
 }
+?>
