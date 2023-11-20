@@ -1,11 +1,7 @@
 <?php
-// Inicia la sesión
-session_start();
 
-// Destruye la sesión
-session_destroy();
+include("database.php");
 
-// Redirige a la página de inicio
-header("Location: ../index.html");
-exit();
+
+
 ?>

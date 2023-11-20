@@ -98,8 +98,8 @@ button:hover {
 }
 
 main {
-    background: rgba(255, 255, 255, 0.75);
-    /* Fondo con transparencia */
+    background: #fff;
+    opacity: 0.75;
     padding: 20px;
     box-sizing: border-box;
     width: 50%;
@@ -111,11 +111,6 @@ main {
 main p {
     font-size: 1.2rem;
     text-align: center;
-}
-
-main>* {
-    opacity: 1;
-    /* Opacidad completa para los elementos secundarios */
 }
 
 a {
@@ -164,7 +159,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
-
 }
 
 .descripcion h2 {
@@ -196,35 +190,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-inner img {
-    border-radius: 8px;
-    /* Añade bordes redondeados a las imágenes */
+    border-radius: 8px; /* Añade bordes redondeados a las imágenes */
 }
 
 /* Estilos para el botón submit */
 .carousel-item .btn-primary {
-    margin-top: 10px;
-    /* Espaciado superior */
-    background-color: #4CAF50;
-    /* Color de fondo verde */
-    color: #fff;
-    /* Color del texto blanco */
-    border: none;
-    /* Sin borde */
-    padding: 10px 20px;
-    /* Ajusta el padding según sea necesario */
-    border-radius: 5px;
-    /* Añade bordes redondeados al botón */
-    cursor: pointer;
-    /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 10px; /* Espaciado superior */
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 5px; /* Añade bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 .carousel-item .btn-primary:hover {
-    background-color: #45a049;
-    /* Cambia el color de fondo al pasar sobre el botón */
+    background-color: #45a049; /* Cambia el color de fondo al pasar sobre el botón */
 }
 
-header,
-.alert {
+header, .alert {
     z-index: 100;
 }
 
@@ -249,14 +233,14 @@ header,
     display: flex;
 }
 
-.table__productos>img {
+.table__productos > img {
     width: 9rem;
     object-fit: contain;
     border-radius: 6px;
     margin-right: 20px;
 }
 
-.table__cantidad>input {
+.table__cantidad > input {
     width: 40px;
     border: none;
     outline: 0;
@@ -269,4 +253,80 @@ header,
 .hide,
 .remove {
     display: none;
+}
+       /* Fondo oscuro detrás de la ventana modal */
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Asegura que la modal esté en la parte superior */
+}
+
+/* Estilos para la ventana modal */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para el formulario dentro de la ventana modal */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color:  #5f8375; /* Verde más oscuro */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 0, 0); /* Cambio de color al pasar el ratón */
+}
+
+/* Agrega otros estilos según tus preferencias */
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: #ffffff; /* Color del icono */
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.close-button:hover {
+    background-color: #e40808; /* Cambio de color al pasar el ratón */
 }
