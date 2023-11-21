@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Compra</title>
+</head>
+<body>
+
+<h2>Formulario de Compra</h2>
+
+<form action="Compra.php" method="post">
+  <label for="email">Correo electrónico:</label>
+  <input type="email" name="email" required><br>
+
+  <label for="medioPago">Medio de pago:</label>
+  <select name="medioPago">
+    <option value="tarjeta">Tarjeta de crédito</option>
+    <option value="efectivo">Efectivo</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select><br>
+
+  <label for="idmenu">ID del Menú:</label>
+  <input type="text" name="idmenu" required><br>
+
+  <label for="productos">Productos:</label><br>
+  <!-- Suponiendo que recibes un array de productos con cantidades -->
+  <input type="checkbox" name="productos[pizza]" value="1"> Pizza<br>
+  <input type="checkbox" name="productos[hamburguesa]" value="2"> Hamburguesa<br>
+  <!-- Agrega más productos según tus necesidades -->
+
+  <input type="submit" value="Comprar">
+</form>
+
+</body>
+</html>
