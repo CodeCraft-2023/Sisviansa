@@ -11,10 +11,10 @@
     <link rel="shortcut icon" href="img/logo.png">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Sisviansa</title>
-
 </head>
 
 <body>
+
     <header class=" bg-dark position-sticky top-0">
         <nav>
             <div class="logo">
@@ -58,7 +58,6 @@
             </ul>
         </nav>
     </header>
-
 
     <main>
         <div id="izquierda">
@@ -106,15 +105,12 @@
 
             </div>
         </div>
-
-
         <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
             Producto Añadido al carrito!
         </div>
         <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
             Producto removido!
         </div>
-
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 1
@@ -271,8 +267,6 @@
 
             </div>
         </div>
-
-
         <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <!-- JavaScript Bundle with Popper -->
@@ -280,72 +274,42 @@
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"></script>
         <script src="./script/scripts.js"></script>
+    </main>
+
+    <footer>
+        <div class="bg-dark p-3 mt-2">
+            <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="img/twitter-icon.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+            <p class="text-center m-0 text-muted">JSON DEV - VANILLA JAVASCRIPT</p>
+        </div>
+        <p>&copy; 2023 Sisviansa. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./script/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".button").click(function () {
+                $(".alert-primary").addClass("show").removeClass("hide");
+                setTimeout(function () {
+                    $(".alert-primary").addClass("hide").removeClass("show");
+                }, 2000);
+            });
+
+            $(".remove").click(function () {
+                $(".alert-danger").addClass("show").removeClass("hide");
+                setTimeout(function () {
+                    $(".alert-danger").addClass("hide").removeClass("show");
+                }, 2000);
+            });
+        });
+    </script>
 </body>
 
 </html>
-
-
-
-</main>
-<article>
-    <section></section>
-</article>
-<aside></aside>
-<footer>
-    <div class="bg-dark p-3 mt-2">
-        <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Facebook"></a>
-        <a href="#" target="_blank"><img src="img/twitter-icon.png" alt="Twitter"></a>
-        <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Instagram"></a>
-        <a href="#" target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
-        <p class="text-center m-0 text-muted">JSON DEV - VANILLA JAVASCRIPT</p>
-    </div>
-    <p>&copy; 2023 Sisviansa. Todos los derechos reservados.</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-<script src="./script/scripts.js"></script>
-
-<script>
-    $(document).ready(function () {
-        $(".button").click(function () {
-            $(".alert-primary").addClass("show").removeClass("hide");
-            setTimeout(function () {
-                $(".alert-primary").addClass("hide").removeClass("show");
-            }, 2000);
-        });
-
-        $(".remove").click(function () {
-            $(".alert-danger").addClass("show").removeClass("hide");
-            setTimeout(function () {
-                $(".alert-danger").addClass("hide").removeClass("show");
-            }, 2000);
-        });
-    });
-</script>
-</body>
-
-</html>
-
-<!--<nav>
-    <div class="nav">
-        <div class="nav-cont-1">
-            <img class="cont-1" id="logo" src="img/logo.png" alt="Logo Sisviansa"></a>
-            <h3 class="cont-1">Sisviansa</h3>
-        </div>
-        <div class="nav-cont-2">
-            <a class="cont-2" href="#">Inicio</a>
-            <a class="cont-2" href="#">Nosotros</a>
-            <a class="cont-2" href="#">Ayuda</a>
-            <a class="cont-2" href="#"><img id="icono" src="img/carrito.png" alt="Carrito de compras"></a>
-            <a class="cont-2" href="#"><img id="icono" src="img/lupa.png" alt="Icono de buscador"></a>
-        </div>
-        <div class="nav-cont-3">
-            <a class="cont-3" href="php-login/login.php"><input type="button" value="Iniciar sesión"></a>
-            <a class="cont-3" href="php-login/singup.php"><input type="button" value="Registrarse"></a>
-        </div>
-    </div>
-</nav>-->
