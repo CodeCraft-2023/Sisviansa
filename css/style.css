@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url("/img/fondo_4.jpg") fixed no-repeat;
+    background: url("../img/fondo_4.jpg") fixed no-repeat;
     background-size: cover;
 }
 
@@ -190,25 +190,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-inner img {
-    border-radius: 8px; /* Añade bordes redondeados a las imágenes */
+    border-radius: 8px;
+    /* Añade bordes redondeados a las imágenes */
 }
 
 /* Estilos para el botón submit */
 .carousel-item .btn-primary {
-    margin-top: 10px; /* Espaciado superior */
-    background-color: #4CAF50; /* Color de fondo verde */
-    color: #fff; /* Color del texto blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Ajusta el padding según sea necesario */
-    border-radius: 5px; /* Añade bordes redondeados al botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 10px;
+    /* Espaciado superior */
+    background-color: #4CAF50;
+    /* Color de fondo verde */
+    color: #fff;
+    /* Color del texto blanco */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Ajusta el padding según sea necesario */
+    border-radius: 5px;
+    /* Añade bordes redondeados al botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
 }
 
 .carousel-item .btn-primary:hover {
-    background-color: #45a049; /* Cambia el color de fondo al pasar sobre el botón */
+    background-color: #45a049;
+    /* Cambia el color de fondo al pasar sobre el botón */
 }
 
-header, .alert {
+header,
+.alert {
     z-index: 100;
 }
 
@@ -233,14 +243,14 @@ header, .alert {
     display: flex;
 }
 
-.table__productos > img {
+.table__productos>img {
     width: 9rem;
     object-fit: contain;
     border-radius: 6px;
     margin-right: 20px;
 }
 
-.table__cantidad > input {
+.table__cantidad>input {
     width: 40px;
     border: none;
     outline: 0;
@@ -254,7 +264,8 @@ header, .alert {
 .remove {
     display: none;
 }
-       /* Fondo oscuro detrás de la ventana modal */
+
+/* Fondo oscuro detrás de la ventana modal */
 .modal-background {
     display: none;
     position: fixed;
@@ -265,7 +276,8 @@ header, .alert {
     background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
-    z-index: 999; /* Asegura que la modal esté en la parte superior */
+    z-index: 999;
+    /* Asegura que la modal esté en la parte superior */
 }
 
 /* Estilos para la ventana modal */
@@ -302,14 +314,16 @@ select {
 }
 
 input[type="submit"] {
-    background-color:  #5f8375; /* Verde más oscuro */
+    background-color: #5f8375;
+    /* Verde más oscuro */
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(0, 0, 0); /* Cambio de color al pasar el ratón */
+    background-color: rgb(0, 0, 0);
+    /* Cambio de color al pasar el ratón */
 }
 
 /* Agrega otros estilos según tus preferencias */
@@ -319,7 +333,8 @@ input[type="submit"]:hover {
     top: 10px;
     right: 10px;
     background-color: red;
-    color: #ffffff; /* Color del icono */
+    color: #ffffff;
+    /* Color del icono */
     border: none;
     padding: 8px;
     font-size: 20px;
@@ -328,5 +343,22 @@ input[type="submit"]:hover {
 }
 
 .close-button:hover {
-    background-color: #e40808; /* Cambio de color al pasar el ratón */
+    background-color: #e40808;
+    /* Cambio de color al pasar el ratón */
+}
+
+/* footer.css */
+
+footer {
+    background-color: #40524b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo_redes_sociales img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

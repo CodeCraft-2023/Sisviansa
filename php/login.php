@@ -1,8 +1,10 @@
 <?php
-// Incluir el archivo de conexión a la base de datos
-require_once "database.php";
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Incluir el archivo de conexión a la base de datos
+    require_once "database.php";
+
     // Recuperar datos del formulario
     $email = $_POST["email"];
     $password = $_POST["password"];
@@ -15,8 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Usuario encontrado, verificar la contraseña
         $row = $result->fetch_assoc();
         if (password_verify($password, $row["contrasena"])) {
-            echo "Inicio de sesión exitoso. Bienvenido, " . $email;
-            // Puedes redirigir o realizar otras acciones después del inicio de sesión exitoso
+            // Inicio de sesión exitoso, almacenar datos en la sesión
+            $_SESSION["email"] = $email;
+            $_SESSION["nCliente"] = $row["nCliente"];  // Puedes almacenar otros datos de sesión según tus necesidades
+            
+            // Redirigir a index.html después del inicio de sesión exitoso
+            header("Location: ../index.html");
+            exit();
         } else {
             echo "Contraseña incorrecta";
         }
