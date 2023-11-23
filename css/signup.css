@@ -75,3 +75,7 @@ input {
 }
 
 /* Estilos adicionales según tus necesidades */
+
+.hidden {
+  display: none;
+}
