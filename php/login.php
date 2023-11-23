@@ -25,10 +25,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../index.html");
             exit();
         } else {
-            echo "Contraseña incorrecta";
+            // Contraseña incorrecta
+            header("Location: ../login.html?error=Contraseña+incorrecta");
+            exit();
         }
     } else {
-        echo "Usuario no encontrado";
+        // Usuario no encontrado
+        header("Location: ../login.html?error=Correo+incorrecto");
+        exit();
     }
 
     // Cierra la conexión a la base de datos

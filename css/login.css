@@ -47,6 +47,10 @@ body {
   input[type="submit"]:hover {
     background: #000000;
   }
-  
-  /* Estilos adicionales según tus necesidades */
-  
+
+
+  .error-message {
+    display: none;
+    color: red;
+    margin-top: 10px;
+  }

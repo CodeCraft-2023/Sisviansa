@@ -10,9 +10,10 @@
     <title>Iniciar Sesión</title>
 
 </head>
-<body> 
-   
-    <form action="php/login.php" method="post">
+
+<body>
+
+    <form action="php/login.php" method="post" onsubmit="return validateForm()">
         <h2>Iniciar Sesión</h2>
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required><br>
@@ -22,5 +23,42 @@
 
         <input type="submit" value="Iniciar Sesión">
     </form>
+
+    <div id="error-message" class="error-message">
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email.trim() === "" || password.trim() === "") {
+                alert("Por favor, completa todos los campos");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+<script>
+    // Verificar si hay un mensaje de error en el URL (parámetro GET)
+    const urlParams = new URLSearchParams(window.location.search);
+    const errorMessage = urlParams.get('error');
+
+    // Mostrar el mensaje de error como alerta si existe
+    if (errorMessage) {
+        let errorText = "Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.";
+
+        if (errorMessage === "Correo incorrecto") {
+            errorText = "Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.";
+        } else if (errorMessage === "Contraseña incorrecta") {
+            errorText = "Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.";
+        }
+
+        alert(errorText);
+    }
+</script>
+
 </body>
+
 </html>
