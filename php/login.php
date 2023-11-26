@@ -26,12 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         } else {
             // Contraseña incorrecta
-            header("Location: ../login.html?error=Contraseña+incorrecta");
+            header("Location: ../login.html?error=Correo+o+Contraseña+incorrecto");
             exit();
         }
     } else {
         // Usuario no encontrado
-        header("Location: ../login.html?error=Correo+incorrecto");
+        header("Location: ../login.html?error=Correo+o+Contraseña+incorrecto");
         exit();
     }
 
